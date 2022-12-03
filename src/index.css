@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header {
+/* header {
   background-color: #404040;
   padding: 1rem;
 }
@@ -16,4 +16,61 @@ header a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+} */
+
+.site-container {
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.btn-primary {
+  background-color: #ffc000;
+  color: #222;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.rating span {
+  color: #ffc000;
+}
+
+.product {
+  border: 1px solid #404040;
+  margin: 0.4rem;
+}
+
+.product img {
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.img-large {
+  max-width: 100%;
+  max-height: 80vh;
+  margin: auto;
+}
+@media screen and (max-width: 800px) {
+  .product {
+    width: 80%;
+    margin: auto;
+  }
+
+  .products {
+    text-align: center;
+    padding: 1.5rem 2rem;
+  }
 }
